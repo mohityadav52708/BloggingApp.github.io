@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s linear;
+
+}
+body.dark-mode{
+    background-color: #000;
+    color: whitesmoke;
+}
+.dark-mode .home{
+    background-image: url(https://img.freepik.com/premium-photo/night-desert-with-oasis-starry-sky-full-moon-3d-illustration_76964-3085.jpg);
+}
+.dark-mode .homecontent h1{
+    color: black;
+}
+.topbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    transition: all 0.3s linear;
+
+}
+.logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+
+}
+
+.name{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 1.2s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+transition: all 1.2s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+transition: all 0.3s linear;
+
+}
+.navbar{
+    flex:1;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s linear;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    margin:  20px;
+    color: whitesmoke;
+    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    /* visibility: visible; */
+    /* opacity: 1; */
+    /* transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s,
+     transform 2.5s cubic-bezier(0.5, 0, 0, 1) 0.4s; */
+     transition: all 0.5s linear;
+}
+.navbar a:hover{
+    /* border-bottom-color: 2px solid red; */
+    /* color: black; */
+    color:aqua;
+}
+
+.home{
+    width: 100%;
+    height: 70vh;
+    background-image: url(https://offsprout.com/wp-content/uploads/2019/04/adult-blur-camera-368893.jpg);
+    /* background-image: url(https://media.licdn.com/dms/image/D4E12AQHo30vrSf46RA/article-cover_image-shrink_600_2000/0/1680682347306?e=2147483647&v=beta&t=CFbp65Vb3TyH0RnVJ7begAlnQevUbQRIiDqkoM3DMug); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+.homecontent{
+    margin-top: -5rem;
+    /* color: black; */
+}
+.homecontent h1{
+    font-size:40px;
+    margin-left: 5rem;
+    transition: all 0.3s linear;
+
+}
+.blogs{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    margin-left: 10%;
+    /* background-color: red; */
+    transition: all 0.3s linear;
+
+}
+ #title{
+    font-size: 30px;
+    margin-top: 2rem;
+    text-align: center;
+    transition: all 0.3s linear;
+
+}
+.blog{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    transition: all 0.3s linear;
+
+    /* flex-wrap: wrap; */
+}
+.blog .post{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-right: 20px; */
+    transition: all 0.3s linear;
+
+}
+.paragraph .blogheading{
+   
+    margin: 20px;
+    transition: all 0.3s linear;
+
+}
+.paragraph{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+
+}
+.blog .post img{
+    width: 80%;
+    height: 300px;
+    border-radius: 18px;
+    margin: 20px;
+    transition: all 0.3s linear;
+
+}
+.blog  h1{
+    text-align: center;
+    /* color: black; */
+    transition: all 0.3s linear;
+
+}
+.blogcontent{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+
+}
+
+#mybutton{
+    background-color: transparent;
+    outline: none;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+
+}
+#mybutton .moon{
+    width: 45px;
+    fill: orange;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.linkofwebsite{
+    text-decoration: none;
+    /* color:rgb(7, 24, 18); */
+    color: aqua;
+    transition: all 0.3s linear;
+
+}
+.linkofwebsite:hover{
+    font-weight: bold ;
+    color: aqua;
+    transition: all 0.3s linear;
+
+}
+.dark-mode .blogheading a{
+    color: black;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body.dark-mode{
+        background-color:lightblue;
+        color: black;
+    }
+    .dark-mode .homecontent h1{
+        color: black;
+    }
+   
+    .linkofwebsite{
+     color: black;
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+    }
+    .blog .post img {
+        width: 100%;
+        height: 300px;
+        border-radius: 18px;
+        margin: 20px;
+    }
+    .navbar #home{
+        display: none;
+    }
+    .navbar #about{
+        display: none;
+    }
+    .navbar #contact{
+        display: none;
+    }
+    .navbar #search{
+        margin-left: 3rem;
+    }
+    .name h1{
+        font-size: 20px;
+    }
+    .logo h1{
+        font-size: 25px;
+    }
+  }

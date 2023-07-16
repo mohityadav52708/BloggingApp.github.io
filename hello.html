@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.search-input {
+  display: none;
+  width: 200px;
+  padding: 5px;
+}
+
+.show-input .search-icon {
+  display: none;
+}
+
+.show-input .search-input {
+  display: block;
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="navbar-item">
+          <span class="search-icon" onclick="toggleSearchInput()">&#128269;</span>
+          <input type="text" class="search-input" placeholder="Search..." />
+        </div>
+      </div>
+      
+      <script>
+        function toggleSearchInput() {
+  var navbarItem = document.querySelector('.navbar-item');
+  navbarItem.classList.toggle('show-input');
+}
+
+      </script>
+</body>
+</html>
